@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício prático 01 - HTML5 API's [Drag &amp; Drop API]</title>
+    <meta name="author" content="Rodolfo e Daniel">
+    <link rel="stylesheet" type="text/css" media="all" href="estiloDragDrop.css" />
+</head>
+
+<body>
+    <main aria-labelledby="titulo1">
+        <h1 id="titulo1">Exerci­cio Pratico 01 - HTML5 API's [Drag &amp; Drop API]</h1>
+        <form id="form__upload" enctype="multipart/form-data">
+            <div role="legenda" aria-labelledby="nav1"></div>
+            <h2 id="nav1">Upload de arquivos</h2>
+            <fieldset id="form__fieldset__upload">
+                <legend>Upload de arquivos</legend>
+                <div>
+                    <label aria-label="Arquivos para upload" for="fileselect">Arquivos para upload: </label>
+                    <input aria-label="Selecione o arquivo para upload" type="file" id="button__fileselect" name="fileselect[]" multiple="multiple" />
+                    <div aria-label="ou solte os arquivos aqui" id="div__filedrag">ou solte os arquivos aqui</div>
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+    <div id="div__messages">
+    </div>
+
+    <script src="scriptDragDrop.js"></script>
+</body>
+
+</html>
